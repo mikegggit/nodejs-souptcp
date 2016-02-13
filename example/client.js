@@ -1,4 +1,4 @@
-var SoupClient = require('../app/client.js').SoupClient;
+var SoupClient = require('../client.js').SoupClient;
 
 var config = {
   port: 9000
