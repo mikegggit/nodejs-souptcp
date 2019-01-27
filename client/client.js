@@ -80,8 +80,8 @@ function SoupClient(config) {
       socket.end()
     });
     this.socket.on('data', function(data) {
-      util.log("heard data")
       var msgType = data.toString("utf-8", 0, 1);
+      util.log("data" + msgType)
 
       switch(msgType) {
       case 'A':
@@ -93,7 +93,6 @@ function SoupClient(config) {
 	util.log("heard login rejected message.");
 	break;
       case 'H':
-	util.log("heard server heartbeat.");
 	clearTimeout(_this.serverMonitor);
 	_this.scheduleServerHeartbeatMonitor();
 	break;

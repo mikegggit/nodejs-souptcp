@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-souptcp",
+  "version": "1.0.0",
+  "description": "NodeJS implementation of the Soup TCP 2.0 specification",
+  "scripts": {
+    "doc": "jsdoc -c conf.json",
+    "postinstall": "cd server && npm install && cd ../client && npm install"
+  }
+}

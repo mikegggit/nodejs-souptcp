@@ -3,7 +3,7 @@ var s = require('underscore.string')
 
 var TIMEOUT_LOGIN_REQUEST_IN_SECONDS = 30;
 var TIMEOUT_HEARTBEAT_IN_SECONDS = 1;
-var TIMEOUT_PUMP_IN_SECONDS = 1;
+var TIMEOUT_PUMP_IN_SECONDS = .2;
 var TIMEOUT_NO_CLIENT_HEARTBEAT_IN_SECONDS = 15;
 /** 
  * ClientWorker @constructor.

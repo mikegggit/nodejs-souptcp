@@ -1,0 +1,8 @@
+{
+    "source": {
+        "include": [ "server/server.js", "server/libs", "client/client.js" ],
+        "exclude": [ /* array of paths to exclude */ ],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    }
+}
